@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/readme/nppaiassistant-banner.jpeg" alt="狐狸編輯夥伴在夜色工作空間中引導發光文件頁面" width="100%">
+  <img src="docs/assets/readme/NppAIAssistant_01.png" alt="狐狸編輯夥伴在夜色工作空間中引導發光文件頁面" width="100%">
 </p>
 
 # NppAIAssistant
@@ -24,7 +24,7 @@
 4. **決定寫入位置。** 保留在面板、插入游標、取代選取文字，或建立新文件。
 
 <p align="center">
-  <img src="docs/assets/readme/nppaiassistant-workflow.jpeg" alt="狐狸編輯夥伴在月夜工作空間中牽引發光文件，象徵文字在編輯流程中的移動" width="100%">
+  <img src="docs/assets/readme/NppAIAssistant_02.png" alt="狐狸編輯夥伴在月夜工作空間中牽引發光文件，象徵文字在編輯流程中的移動" width="100%">
 </p>
 
 ## 認識工作台 · v0.2.0.6
