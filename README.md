@@ -1,126 +1,126 @@
 <p align="center">
-  <img src="docs/assets/readme/NppAIAssistant_01.png" alt="狐狸編輯夥伴在夜色工作空間中引導發光文件頁面" width="100%">
+  <img src="docs/assets/readme/NppAIAssistant_01.png" alt="A fox editing companion guiding illuminated pages through a night workspace" width="100%">
 </p>
 
 # NppAIAssistant
 
-**讓 AI 在文字旁協助你。提示看得見，寫入由你決定。**
+**AI assistance beside your text. Visible prompts. Deliberate edits.**
 
-原生 Notepad++ 外掛，協助解釋程式、改寫文字、整理草稿。你可以選擇雲端 AI 服務，也可以連接本機模型。
+A native Notepad++ plugin for explaining code, rewriting text, and turning a request into a useful draft—using a cloud provider or a local model.
 
-[Windows 安裝包與安裝說明](DOWNLOADS.md)
+[Windows downloads & installation](DOWNLOADS.md)
 
-[下載](https://github.com/pingqLIN/NppAIAssistant/releases/latest) · [回報問題](https://github.com/pingqLIN/NppAIAssistant/issues) · [GPL-3.0](LICENSE)
+[繁體中文](README_zh-TW.md) · [Download](https://github.com/pingqLIN/NppAIAssistant/releases/latest) · [Report an issue](https://github.com/pingqLIN/NppAIAssistant/issues) · [GPL-3.0](LICENSE)
 
-> **版本說明：**目前 GitHub x64 正式版為 **0.2.0.6**（`v0.2.0.6`）。Notepad++ 官方 Plugin List x64 條目亦已透過 [上游 PR #1196](https://github.com/notepad-plus-plus/nppPluginList/pull/1196) 更新至 **0.2.0.6**；個別安裝環境的 Plugins Admin 顯示可能因清單傳播略有延遲。下方工作台導覽對應 0.2.0.6 介面；截圖使用真實原生控制項，正式版的 host acceptance 另行完成。
+> **Version guide:** the current GitHub x64 release is **0.2.0.6** (`v0.2.0.6`). The official Notepad++ Plugin List x64 entry is also at **0.2.0.6** via [upstream PR #1196](https://github.com/notepad-plus-plus/nppPluginList/pull/1196); individual installations may see the Plugins Admin update after list propagation. The workspace tour below reflects the 0.2.0.6 UI. Screenshots use native controls; release host acceptance was completed separately from screenshot capture.
 
-> **正式版行為：** v0.2.0.6 已包含 OpenRouter。選取文字後按 Ctrl＋滑鼠右鍵可開啟 AI 選單；一般右鍵與鍵盤選單保留 Notepad++ 原生行為，也可在設定中完全停用 AI 右鍵選單。詳見[使用說明](docs/USAGE.md#context-menu-actions)。
+> **Release behavior:** OpenRouter is included in v0.2.0.6. The optional AI context menu uses Ctrl + mouse right-click on selected text; ordinary right-click and keyboard menus stay native, and the feature can be disabled in Settings. See [usage](docs/USAGE.md#context-menu-actions).
 
-## 從提問到完成編輯
+## From a question to an edit
 
-1. **選擇服務與模型。** 使用雲端 API，或連接本機 LM Studio。
-2. **整理這次請求。** 選擇任務預設與輸出格式，送出前檢查組合後的提示。
-3. **檢視回覆。** 切換基本格式預覽與原文，確認內容符合需求。
-4. **決定寫入位置。** 保留在面板、插入游標、取代選取文字，或建立新文件。
+1. **Choose a service and model.** Use your preferred cloud API or a local LM Studio endpoint.
+2. **Shape the request.** Select a task preset and output format, then inspect the prompt before sending.
+3. **Read the result.** Switch between a basic formatted preview and the original response.
+4. **Choose where it goes.** Keep the answer in the panel, insert at the cursor, replace the selection, or create a new document.
 
 <p align="center">
-  <img src="docs/assets/readme/NppAIAssistant_02.png" alt="狐狸編輯夥伴在月夜工作空間中牽引發光文件，象徵文字在編輯流程中的移動" width="100%">
+  <img src="docs/assets/readme/NppAIAssistant_02.png" alt="The fox companion pulling illuminated pages through a moonlit workspace, representing text moving through an editing workflow" width="100%">
 </p>
 
-## 認識工作台 · v0.2.0.6
+## Meet the workspace · v0.2.0.6
 
-### 把請求、回覆與輸出位置放在一起
+### Keep the request, response, and destination together
 
-<img src="docs/assets/screenshots/workspace-0.2.0.6-en.png" alt="英文原生工作台預覽，包含服務選擇、Markdown 範例回覆、輸出位置與輸入區" width="680">
+<img src="docs/assets/screenshots/workspace-0.2.0.6-en.png" alt="English native workspace preview showing provider controls, a sample Markdown response, output destination and input box" width="680">
 
-上方選擇服務、模型、任務設定與輸出格式；中間閱讀回覆；下方保留輸出位置和輸入區。可調整面板寬度、拖曳輸入區分隔線，或使用 **A+ / A−** 調整閱讀字級。
+The upper controls select the provider, model, task profile, and output format. The response occupies the center; the destination and input remain below it. Resize the panel, drag the input divider, or use **A+ / A−** to make the text comfortable to read.
 
-| 控制項 | 能幫你完成什麼 |
+| Control | What it helps you do |
 | --- | --- |
-| 送出前預覽 | 檢查即將送往指定服務的完整提示。 |
-| 格式預覽／原文 | 閱讀基本 Markdown 或縮排 JSON，同時保留原始回覆。 |
-| 輸出位置 | 明確選擇面板、游標、選取文字或新文件。 |
-| 回覆選擇 | 選擇要插入文件的那一則 AI 回覆。 |
-| 新增／分支對話 | 整理本機對話紀錄；分支不會自動變成模型上下文。 |
+| Preview before send | Check the assembled prompt before it reaches the selected provider. |
+| Formatted / original view | Read basic Markdown or indented JSON while retaining the original response. |
+| Output destination | Explicitly choose panel, cursor, selection, or new document. |
+| Reply selection | Choose which assistant reply to insert. |
+| New / branch conversation | Organize local transcripts. Conversation branches do not automatically become model context. |
 
-### 分開設定連線與任務
+### Configure the connection separately from the task
 
-<img src="docs/assets/screenshots/settings-0.2.0.6-en.png" alt="原生設定對話框，顯示空白 API 金鑰欄位及本機服務設定" width="680">
+<img src="docs/assets/screenshots/settings-0.2.0.6-en.png" alt="Native settings dialog with empty API key fields and local provider settings" width="680">
 
-設定將服務連線與提示配置分開。LM Studio 有獨立的網址、API 模式與模型選擇：先探索可用模型，再明確選擇預設模型。截圖中的金鑰欄位皆為空白；拍攝環境停用網路，因此模型探索顯示無法載入。
+The settings separate provider connections from prompt configuration. LM Studio has its own base URL, API mode, and model selection. Discover available models, then explicitly choose a default model. API keys in this screenshot are empty. Model discovery is unavailable in this network-disabled screenshot fixture.
 
-### 知道自己送出了什麼
+### Know what you are sending
 
-<img src="docs/assets/screenshots/prompt-0.2.0.6-en.png" alt="原生提示設定，顯示任務預設、輸出規則及組合提示預覽" width="680">
+<img src="docs/assets/screenshots/prompt-0.2.0.6-en.png" alt="Native prompt settings showing task presets, output rules and prompt preview" width="680">
 
-任務預設、回覆語言、輸出規則與組合提示預覽集中呈現。內建範本區塊預設鎖定，需要明確解鎖才能修改。可見的 Memory 預設關閉，內容以一般本機文字儲存，請勿放入秘密資訊。
-
-<p align="center">
-  <img src="docs/assets/readme/nppaiassistant-prompt-companion.jpeg" alt="狐狸編輯夥伴近景引導發光文件，呼應提示檢視與由使用者決定的文件寫入" width="680">
-</p>
-
-### 繁體中文（TW-Zh）工作台
+Prompt configuration brings task presets, response language, output rules, and the assembled preview into one place. Built-in template sections are locked by default and require an explicit unlock to edit. Optional visible Memory is disabled by default; it is ordinary local text, so keep secrets out of it.
 
 <p align="center">
-  <img src="docs/assets/screenshots/workspace-0.2.0.6-zh-tw.png" alt="NppAIAssistant v0.2.0.6 繁體中文原生工作台" width="49%">
-  <img src="docs/assets/screenshots/settings-0.2.0.6-zh-tw.png" alt="NppAIAssistant v0.2.0.6 繁體中文 AI Services 設定" width="49%">
+  <img src="docs/assets/readme/nppaiassistant-prompt-companion.jpeg" alt="Close-up of the fox editing companion directing illuminated pages, echoing prompt inspection and deliberate document edits" width="680">
 </p>
 
-<img src="docs/assets/screenshots/prompt-0.2.0.6-zh-tw.png" alt="繁體中文 Prompt Behavior 設定與提示預覽" width="680">
+### Traditional Chinese (TW-Zh) workspace
 
-語言選單以 **TW-Zh** 標示繁體中文，用來和簡體中文區隔；既有繁中介面與設定行為維持不變。
+<p align="center">
+  <img src="docs/assets/screenshots/workspace-0.2.0.6-zh-tw.png" alt="Traditional Chinese native workspace in NppAIAssistant v0.2.0.6" width="49%">
+  <img src="docs/assets/screenshots/settings-0.2.0.6-zh-tw.png" alt="Traditional Chinese AI Services settings in NppAIAssistant v0.2.0.6" width="49%">
+</p>
 
-### 原生右鍵與 AI 選單
+<img src="docs/assets/screenshots/prompt-0.2.0.6-zh-tw.png" alt="Traditional Chinese Prompt Behavior settings with prompt preview" width="680">
 
-<img src="docs/assets/screenshots/context-menu-actions.png" alt="Notepad++ 中 NppAIAssistant 的選取文字 AI 右鍵操作" width="680">
+The language selector labels Traditional Chinese as **TW-Zh** to distinguish it from Simplified Chinese while preserving the existing Traditional Chinese interface and settings behavior.
 
-一般右鍵維持 Notepad++ 原生選單；選取文字後按 **Ctrl＋右鍵** 才開啟 AI 操作。**Shift+F10／Menu key** 保留原生行為，也可在設定中完全停用修飾鍵 AI 選單。
+### Native context-menu workflow
 
-## 服務與輸出格式
+<img src="docs/assets/screenshots/context-menu-actions.png" alt="NppAIAssistant context-menu actions for selected text in Notepad++" width="680">
 
-v0.2.0.6 實作 OpenAI、Gemini、Claude、OpenRouter、LM Studio，以及通用 OpenAI 相容服務。模型可用性、存取資格與費用依你選擇的服務而定。Copilot 目前暫停提供。
+Ordinary right-click stays with the native Notepad++ menu. **Ctrl + right-click** on selected text opens the AI actions; **Shift+F10 / Menu key** stays native. The modifier can also be disabled entirely in Settings.
 
-| 輸出模式 | v0.2.0.6 行為 |
+## Providers and output
+
+v0.2.0.6 implements OpenAI, Gemini, Claude, OpenRouter, LM Studio, and a generic OpenAI-compatible profile. Availability, model access, and usage charges depend on the selected provider. Copilot is currently paused.
+
+| Output mode | Behavior in v0.2.0.6 |
 | --- | --- |
-| 文字 | 適合一般編輯、問答與草稿。 |
-| Markdown | 面板支援基本標題、強調、程式碼、清單與引用；不渲染 HTML、圖片、連結與表格。 |
-| JSON | 要求回覆 JSON；這個模式本身不等於 schema 強制驗證。 |
-| 結構化 JSON | 對支援的 OpenAI 與 LM Studio Chat Completions 模型使用原生 schema 傳輸與本機驗證；不支援的路徑會阻擋。 |
+| Text | Plain response for general editing and drafting. |
+| Markdown | Basic headings, emphasis, code, lists, and quotes in the panel. HTML, images, links, and tables are not rendered. |
+| JSON | Asks for JSON; this alone is not schema enforcement. |
+| Structured JSON | Uses native schema transport and local validation for supported OpenAI and LM Studio Chat Completions models. Unsupported routes are blocked. |
 
-請求採非串流方式：狀態列顯示請求階段，完整回應抵達後再顯示答案。**0.2.0.6** 將本機 loopback 生成的**相關 HTTP 階段逾時設為 900 秒**，並非整個請求最多 900 秒；模型探索另用較短逾時。
+Requests are non-streaming: the status strip reports request phases, and the answer appears after the response arrives. In **0.2.0.6**, local loopback generation uses a **900-second timeout for the relevant HTTP phases**; this is not a 900-second total request deadline. Model discovery uses a separate short timeout.
 
-介面支援英文與繁體中文；日文和西班牙文涵蓋主要工作台，進階設定以英文補足。
+English and Traditional Chinese are supported. Japanese and Spanish cover the main workspace, with English fallback in advanced settings.
 
-## 安裝已發布版本
+## Install the published release
 
-開啟 **外掛 → 外掛管理**（Plugins Admin），搜尋 **NppAIAssistant**，安裝目前 Notepad++ 清單提供的版本。清單更新抵達各安裝環境的時間可能不同。
+Use **Plugins → Plugins Admin**, search for **NppAIAssistant**, and install the entry offered by your Notepad++ Plugin List. List updates may reach installations at different times.
 
-若使用 **x64 Notepad++** 手動安裝：
+For manual installation on **x64 Notepad++**:
 
-1. 從 [v0.2.0.6 發布頁](https://github.com/pingqLIN/NppAIAssistant/releases/tag/v0.2.0.6) 下載 `NppAIAssistant-0.2.0.6-x64.zip`。
-2. 關閉 Notepad++，備份既有外掛 DLL。
-3. 將 `NppAIAssistant.dll` 解壓至 `<Notepad++>\\plugins\\NppAIAssistant\\NppAIAssistant.dll`。
-4. 重新開啟 Notepad++，從 **外掛 → NppAIAssistant** 使用功能。
+1. Download `NppAIAssistant-0.2.0.6-x64.zip` from the [v0.2.0.6 release](https://github.com/pingqLIN/NppAIAssistant/releases/tag/v0.2.0.6).
+2. Close Notepad++ and back up any existing plugin DLL.
+3. Extract `NppAIAssistant.dll` to `<Notepad++>\plugins\NppAIAssistant\NppAIAssistant.dll`.
+4. Restart Notepad++ and open its **Plugins → NppAIAssistant** menu.
 
-上述截圖對應 v0.2.0.6 介面。外掛架構必須與編輯器一致；本頁未提供 x86 或 ARM64 發布套件。
+The screenshots above correspond to the v0.2.0.6 interface. Match the plugin architecture to your editor; this page does not offer x86 or ARM64 release downloads.
 
-## 隱私與寫入行為
+## Privacy and editing behavior
 
-- 請求會把組合提示及其中包含的文字送往你指定的端點；只有服務本身也在本機執行，連接本機網址才代表該請求留在本機。
-- v0.2.0.6 使用 Windows DPAPI 保護 API 憑證，存放於 `%LocalAppData%\\Notepad++\\AIAssistant`。偏好與可見提示文字存放於 `%AppData%\\Notepad++\\plugins\\config\\NppAIAssistant.ini`。
-- 使用可攜版 Notepad++，**不會**隔離上述正式版設定路徑。
-- 寫入會檢查文件是否改變、是否唯讀，以及編碼是否可無損轉換。套用前請先檢視生成文字；支援的寫入會合併為可復原的編輯動作。
-- 請求預設為單輪；畫面中看得到歷史紀錄，不代表每次都會重新傳送先前回覆。
+- A request sends its assembled prompt and included text to the endpoint you choose. A local endpoint keeps that request local only if the configured service itself runs locally.
+- v0.2.0.6 protects stored API credentials with Windows DPAPI under `%LocalAppData%\Notepad++\AIAssistant`. Preferences and visible prompt text live under `%AppData%\Notepad++\plugins\config\NppAIAssistant.ini`.
+- A portable Notepad++ folder does **not** isolate those production settings paths.
+- Editor writes are guarded against changed documents, read-only buffers, and lossy encoding conversion. Review generated text before applying it; supported writes are grouped for undo.
+- Requests are single-turn by default. A visible transcript does not mean previous replies are automatically sent again.
 
-## 建置與參與
+## Build and contribute
 
-需要 Windows、Visual Studio C++ 工作負載與 Windows SDK，以及 CMake 3.21 以上版本。在原始碼目錄執行：
+Use Windows, Visual Studio with the C++ workload and Windows SDK, and CMake 3.21 or newer. From a source checkout:
 
 ```powershell
 cmake -S . -B build -A x64
 cmake --build build --config Release
 ```
 
-輸出路徑依原始碼版本與產生器而定；製作發行 ZIP 時請使用專案封裝腳本。回報問題時，請提供外掛與 Notepad++ 版本、架構、服務／API 模式，以及移除憑證與私人文字的最小重現範例。
+Build output paths depend on the checked-out revision and generator. Use the repository packaging scripts when preparing a distributable ZIP. For bug reports, include plugin and Notepad++ versions, architecture, provider/API mode, and a minimal reproducible example with credentials and private text removed.
 
-[視覺設計說明](docs/VISUAL_DESIGN.zh-tw.md) 記錄原創 AI 生成 Banner 的設計方向及截圖來源。Banner 是專案插畫；功能截圖則來自原生控制項。專案使用 AI 協助開發，採 [GPL-3.0](LICENSE) 授權。
+The [visual design notes](docs/VISUAL_DESIGN.md) explain the original AI-generated banner and screenshot provenance. The banner is project artwork; interface screenshots are captured native controls. This project is developed with AI assistance and distributed under [GPL-3.0](LICENSE).
