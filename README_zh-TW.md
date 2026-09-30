@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/readme/nppaiassistant-banner.jpeg" alt="狐狸編輯夥伴在夜色工作空間中引導發光文件頁面" width="100%">
+  <img src="docs/assets/readme/NppAIAssistant-2026-09-30-hero.png" alt="狐狸編輯夥伴在月夜工作空間中引導漂浮文件頁面" width="100%">
 </p>
 
 # NppAIAssistant
@@ -24,7 +24,7 @@
 4. **決定寫入位置。**保留在面板、插入游標、取代選取文字，或建立新文件。
 
 <p align="center">
-  <img src="docs/assets/readme/nppaiassistant-workflow.jpeg" alt="狐狸編輯夥伴在月夜工作空間中牽引發光文件，象徵文字在編輯流程中的移動" width="100%">
+  <img src="docs/assets/readme/NppAIAssistant-2026-09-30-story.png" alt="狐狸編輯夥伴在溫暖燈光照亮的典藏室中查看參考卡片" width="100%">
 </p>
 
 ## 認識工作台 · v0.2.0.6
@@ -56,7 +56,7 @@
 任務預設、回覆語言、輸出規則與組合提示預覽集中呈現。內建範本區塊預設鎖定，需要明確解鎖才能修改。可見的 Memory 預設關閉，內容以一般本機文字儲存，請勿放入秘密資訊。
 
 <p align="center">
-  <img src="docs/assets/readme/nppaiassistant-prompt-companion.jpeg" alt="狐狸編輯夥伴近景引導發光文件，呼應提示檢視與由使用者決定的文件寫入" width="680">
+  <img src="docs/assets/readme/NppAIAssistant-2026-09-30-writing.png" alt="狐狸編輯夥伴在月夜典藏室中以藍光手杖引導發光紙頁" width="680">
 </p>
 
 ### 繁體中文（TW-Zh）工作台

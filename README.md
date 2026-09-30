@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/readme/NppAIAssistant_01.png" alt="A fox editing companion guiding illuminated pages through a night workspace" width="100%">
+  <img src="docs/assets/readme/NppAIAssistant-2026-09-30-hero.png" alt="A fox editing companion surrounded by floating pages in a moonlit workspace" width="100%">
 </p>
 
 # NppAIAssistant
@@ -24,7 +24,7 @@ A native Notepad++ plugin for explaining code, rewriting text, and turning a req
 4. **Choose where it goes.** Keep the answer in the panel, insert at the cursor, replace the selection, or create a new document.
 
 <p align="center">
-  <img src="docs/assets/readme/NppAIAssistant_02.png" alt="The fox companion pulling illuminated pages through a moonlit workspace, representing text moving through an editing workflow" width="100%">
+  <img src="docs/assets/readme/NppAIAssistant-2026-09-30-story.png" alt="The fox editor companion studying illustrated reference cards in a warmly lit archive" width="100%">
 </p>
 
 ## Meet the workspace · v0.2.0.6
@@ -56,7 +56,7 @@ The settings separate provider connections from prompt configuration. LM Studio 
 Prompt configuration brings task presets, response language, output rules, and the assembled preview into one place. Built-in template sections are locked by default and require an explicit unlock to edit. Optional visible Memory is disabled by default; it is ordinary local text, so keep secrets out of it.
 
 <p align="center">
-  <img src="docs/assets/readme/nppaiassistant-prompt-companion.jpeg" alt="Close-up of the fox editing companion directing illuminated pages, echoing prompt inspection and deliberate document edits" width="680">
+  <img src="docs/assets/readme/NppAIAssistant-2026-09-30-writing.png" alt="The fox companion guiding glowing sheets with a blue-lit wand in a moonlit archive" width="680">
 </p>
 
 ### Traditional Chinese (TW-Zh) workspace
